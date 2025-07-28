@@ -1,14 +1,14 @@
 import { Suspense } from 'react';
 import Hero from '@/components/sections/Hero';
 import { AIProjects } from '@/components/sections/AIProjects';
-import { getAIProjects } from '@/content/ai-projects';
+import { getAIProjectsSync } from '@/content/ai-projects';
 import { generatePortfolioStructuredData } from '@/lib/seo/structured-data';
 import { SocialShare } from '@/components/ui/SocialShare';
 import { generateShareableUrl } from '@/lib/seo/social-preview';
 import { AccessibilityToolbar } from '@/components/ui/AccessibilityToolbar';
 
 export default async function Home() {
-  const aiProjects = await getAIProjects();
+  const aiProjects = getAIProjectsSync();
   const portfolioStructuredData = generatePortfolioStructuredData(aiProjects);
   
   const heroData = {

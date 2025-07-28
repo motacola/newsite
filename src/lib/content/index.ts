@@ -6,6 +6,7 @@ export type {
   ContentMetadata,
   ContentValidationRule,
   ContentSchema,
+  ContentQuery,
   ContentError,
   ContentValidationResult,
   ManagedProject,
@@ -19,10 +20,12 @@ export type {
   Collaborator,
   Reference,
   ContentCollection,
-  ContentQuery,
   ContentUpdateOptions,
   ContentBackup
 } from './types';
+
+import type { ContentQuery } from './types';
+import { contentManager } from './manager';
 
 // Validation system
 export { ContentValidator } from './validator';

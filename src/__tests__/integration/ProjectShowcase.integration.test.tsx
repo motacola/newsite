@@ -12,6 +12,30 @@ jest.mock('framer-motion', () => ({
   AnimatePresence: ({ children }: any) => children,
 }));
 
+// Mock the UI components
+const ProjectFilters = ({ onFilterChange, onSearchChange }: any) => (
+  <div data-testid="project-filters">
+    <button onClick={() => onFilterChange('all')}>All</button>
+    <input onChange={(e) => onSearchChange(e.target.value)} placeholder="Search" />
+  </div>
+);
+
+const ProjectCard = ({ project, onCardClick, onDemoClick }: any) => (
+  <div data-testid="project-card" onClick={() => onCardClick(project)}>
+    <h3>{project.title}</h3>
+    <button onClick={() => onDemoClick(project)}>Demo</button>
+  </div>
+);
+
+const ProjectDetailsModal = ({ project, isOpen, onClose }: any) => (
+  isOpen ? (
+    <div data-testid="project-modal">
+      <h2>{project?.title}</h2>
+      <button onClick={onClose}>Close</button>
+    </div>
+  ) : null
+);
+
 // Mock project data
 const mockProjects = [
   {

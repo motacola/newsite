@@ -195,7 +195,7 @@ export function SocialShare({
   return (
     <div className={`${containerClasses} ${className}`}>
       {/* Native Share (mobile) */}
-      {typeof navigator !== 'undefined' && navigator.share && (
+      {typeof navigator !== 'undefined' && 'share' in navigator && (
         <button
           onClick={handleNativeShare}
           className={`flex items-center justify-center ${sizeClasses[size]} rounded-lg border border-gray-200 transition-colors hover:bg-primary-50 hover:border-primary-200`}

@@ -499,7 +499,7 @@ export const getAIProjectStats = async () => {
   const avgAccuracy = projects
     .flatMap((p: any) => p.aiCapabilities || [])
     .filter((c: any) => c.accuracy)
-    .reduce((sum: number, c: any, _, arr: any[]) => sum + (c.accuracy || 0) / arr.length, 0);
+    .reduce((sum: number, c: any, _index: number, arr: any[]) => sum + (c.accuracy || 0) / arr.length, 0);
 
   return {
     totalProjects,
@@ -555,3 +555,4 @@ export const aiCapabilityTypes = Array.from(
     project.aiCapabilities?.map(c => c.type) || []
   ))
 );
+

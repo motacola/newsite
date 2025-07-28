@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAIProjectById } from '@/content/ai-projects';
+import { getAIProjectByIdSync } from '@/content/ai-projects';
 import { generateProjectMetadata } from '@/lib/seo/metadata';
 import { 
   generateProjectStructuredData, 
@@ -17,13 +17,14 @@ import { SocialShare } from '@/components/ui/SocialShare';
 import { generateShareableUrl } from '@/lib/seo/social-preview';
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const project = await getAIProjectById(params.id);
+  const { id } = await params;
+  const project = getAIProjectByIdSync(id);
   
   if (!project) {
     return {
@@ -36,7 +37,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const project = await getAIProjectById(params.id);
+  const { id } = await params;
+  const project = getAIProjectByIdSync(id);
 
   if (!project) {
     notFound();
@@ -149,7 +151,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Interactive Demo
                 </h2>
-                <InteractiveDemo interactive={project.interactive} />
+                <InteractiveDemo 
+                  interactive={project.interactive} 
+                  title={project.title}
+                />
               </div>
             </AnimatedSection>
           )}

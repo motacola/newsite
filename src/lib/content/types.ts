@@ -49,6 +49,18 @@ export interface ContentSchema {
   validation: ContentValidationRule[];
 }
 
+export interface ContentQuery {
+  type?: string;
+  featured?: boolean;
+  categories?: string[];
+  tags?: string[];
+  status?: 'draft' | 'published' | 'archived';
+  limit?: number;
+  offset?: number;
+  sortBy?: string;
+  sortOrder?: 'asc' | 'desc';
+}
+
 export interface ContentError {
   field: string;
   message: string;

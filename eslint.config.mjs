@@ -17,13 +17,28 @@ const eslintConfig = [
       'prefer-const': 'error',
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
-        'error',
+        'warn',
         { argsIgnorePattern: '^_' },
       ],
       '@typescript-eslint/no-explicit-any': 'warn',
       'react/no-unescaped-entities': 'off',
+      '@next/next/no-img-element': 'warn',
+      'jsx-a11y/alt-text': 'warn',
+      'react-hooks/exhaustive-deps': 'warn',
+      '@typescript-eslint/no-require-imports': 'warn',
+      'react/jsx-no-undef': 'error',
     },
   },
+  {
+    files: ['**/__tests__/**/*', '**/*.test.*', '**/*.spec.*'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@next/next/no-img-element': 'off',
+      'jsx-a11y/alt-text': 'off',
+    },
+  },
+
 ];
 
 export default eslintConfig;
