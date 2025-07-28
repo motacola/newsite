@@ -1,0 +1,352 @@
+{
+  "experiences": [
+    {
+      "id": "ogilvy-senior-ai-pm",
+      "type": "experience",
+      "title": "Senior AI Project Manager",
+      "slug": "senior-ai-project-manager-ogilvy",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2022-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.3.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Updated achievements", "Added new projects", "Enhanced skill set"],
+        "hash": "c3d4e5f6g7h8i9j0"
+      },
+      "tags": ["AI", "Project Management", "Leadership", "Innovation", "Machine Learning"],
+      "categories": ["leadership", "ai", "management"],
+      "seo": {
+        "metaTitle": "Senior AI Project Manager at Ogilvy - Christopher Belgrave",
+        "metaDescription": "Leading AI-driven advertising campaigns and digital transformation initiatives at Ogilvy.",
+        "keywords": ["AI project management", "Ogilvy", "digital transformation", "machine learning"],
+        "ogImage": "/experience/ogilvy-og.jpg"
+      },
+      "company": "Ogilvy",
+      "location": "London, UK",
+      "duration": {
+        "start": "Jan 2022",
+        "end": "Present"
+      },
+      "description": "Leading AI-driven advertising campaigns and digital transformation initiatives for major global brands. Responsible for end-to-end project management of cutting-edge AI implementations in marketing technology.",
+      "achievements": [
+        "Successfully delivered the Maybelline ChromaVerse AR gaming experience, increasing user engagement by 45%",
+        "Implemented AI-powered content optimization tools that reduced campaign production time by 30%",
+        "Led cross-functional teams of developers, designers, and data scientists to deliver complex AI projects on time and within budget",
+        "Pioneered the adoption of machine learning models for customer segmentation and personalized marketing",
+        "Managed a portfolio of AI projects with a combined budget of $2.5M annually",
+        "Established AI project management best practices adopted across the agency"
+      ],
+      "skills": [
+        "AI Project Management",
+        "Machine Learning",
+        "AR/VR",
+        "Digital Marketing",
+        "Team Leadership",
+        "Agile Methodologies",
+        "Client Relations",
+        "Data Science",
+        "Computer Vision",
+        "Natural Language Processing"
+      ],
+      "projects": ["maybelline-chromaverse", "ai-content-optimization"],
+      "employmentType": "full-time",
+      "companySize": "large",
+      "industry": "Advertising & Marketing",
+      "responsibilities": [
+        "Lead AI project planning and execution from concept to delivery",
+        "Manage cross-functional teams of 8-15 members including developers, designers, and data scientists",
+        "Collaborate with clients to define AI strategy and implementation roadmaps",
+        "Oversee budget management and resource allocation for AI initiatives",
+        "Ensure compliance with data privacy and AI ethics guidelines",
+        "Present project outcomes and ROI metrics to C-level executives"
+      ],
+      "technologies": ["React", "Node.js", "Python", "TensorFlow", "AWS", "Docker", "Kubernetes"],
+      "teamSize": 12,
+      "reportingTo": "Head of Digital Innovation",
+      "directReports": 3,
+      "salary": {
+        "currency": "GBP",
+        "range": {
+          "min": 75000,
+          "max": 95000
+        }
+      },
+      "companyLogo": "/companies/ogilvy-logo.png",
+      "companyWebsite": "https://www.ogilvy.com",
+      "linkedInUrl": "https://linkedin.com/company/ogilvy",
+      "references": [
+        {
+          "name": "Sarah Mitchell",
+          "title": "Head of Digital Innovation",
+          "email": "sarah.mitchell@ogilvy.com",
+          "linkedIn": "https://linkedin.com/in/sarahmitchell"
+        },
+        {
+          "name": "James Chen",
+          "title": "Creative Director",
+          "linkedIn": "https://linkedin.com/in/jameschen"
+        }
+      ],
+      "isRemote": false
+    },
+    {
+      "id": "wunderman-digital-pm",
+      "type": "experience",
+      "title": "Digital Project Manager",
+      "slug": "digital-project-manager-wunderman-thompson",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2019-03-01T00:00:00Z",
+      "updatedAt": "2021-12-31T00:00:00Z",
+      "publishedAt": "2021-12-31T00:00:00Z",
+      "version": {
+        "version": "1.2.0",
+        "timestamp": "2021-12-31T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Final achievements update", "Added portfolio metrics"],
+        "hash": "d4e5f6g7h8i9j0k1"
+      },
+      "tags": ["Digital Marketing", "Web Development", "Analytics", "Team Leadership"],
+      "categories": ["management", "digital", "analytics"],
+      "seo": {
+        "metaTitle": "Digital Project Manager at Wunderman Thompson - Christopher Belgrave",
+        "metaDescription": "Managed digital marketing campaigns and web development projects for enterprise clients.",
+        "keywords": ["digital project management", "Wunderman Thompson", "web development", "analytics"],
+        "ogImage": "/experience/wunderman-og.jpg"
+      },
+      "company": "Wunderman Thompson",
+      "location": "London, UK",
+      "duration": {
+        "start": "Mar 2019",
+        "end": "Dec 2021"
+      },
+      "description": "Managed digital marketing campaigns and web development projects for enterprise clients. Specialized in data-driven marketing solutions and interactive web experiences.",
+      "achievements": [
+        "Delivered award-winning website redesign for a Fortune 500 financial services client, improving conversion rates by 25%",
+        "Implemented automated reporting dashboards that reduced weekly reporting time by 70%",
+        "Managed a portfolio of projects with a combined budget of $1.5M annually",
+        "Introduced agile methodologies to the digital project team, improving delivery timelines by 40%",
+        "Led the successful migration of 15+ client websites to new CMS platform",
+        "Achieved 98% client satisfaction rating across all managed projects"
+      ],
+      "skills": [
+        "Digital Project Management",
+        "Web Development",
+        "Data Analytics",
+        "Agile/Scrum",
+        "Client Management",
+        "Marketing Automation",
+        "CMS Implementation",
+        "Performance Optimization"
+      ],
+      "projects": ["financial-services-redesign", "automated-reporting-dashboard"],
+      "employmentType": "full-time",
+      "companySize": "large",
+      "industry": "Digital Marketing",
+      "responsibilities": [
+        "Manage end-to-end delivery of digital marketing campaigns",
+        "Coordinate with creative, development, and analytics teams",
+        "Maintain client relationships and manage expectations",
+        "Oversee project budgets and timelines",
+        "Implement quality assurance processes",
+        "Report on project performance and ROI metrics"
+      ],
+      "technologies": ["JavaScript", "React", "Node.js", "Google Analytics", "Adobe Creative Suite", "WordPress", "Drupal"],
+      "teamSize": 8,
+      "reportingTo": "Senior Project Director",
+      "directReports": 2,
+      "salary": {
+        "currency": "GBP",
+        "range": {
+          "min": 55000,
+          "max": 70000
+        }
+      },
+      "companyLogo": "/companies/wunderman-logo.png",
+      "companyWebsite": "https://www.wundermanthompson.com",
+      "linkedInUrl": "https://linkedin.com/company/wunderman-thompson",
+      "references": [
+        {
+          "name": "Michael Roberts",
+          "title": "Senior Project Director",
+          "email": "michael.roberts@wundermanthompson.com",
+          "linkedIn": "https://linkedin.com/in/michaelroberts"
+        }
+      ],
+      "isRemote": false
+    },
+    {
+      "id": "publicis-technical-coordinator",
+      "type": "experience",
+      "title": "Technical Project Coordinator",
+      "slug": "technical-project-coordinator-publicis-sapient",
+      "status": "published",
+      "featured": false,
+      "createdAt": "2017-06-01T00:00:00Z",
+      "updatedAt": "2019-02-28T00:00:00Z",
+      "publishedAt": "2019-02-28T00:00:00Z",
+      "version": {
+        "version": "1.1.0",
+        "timestamp": "2019-02-28T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added final project outcomes", "Updated skill set"],
+        "hash": "e5f6g7h8i9j0k1l2"
+      },
+      "tags": ["Technical Coordination", "E-commerce", "Testing", "Documentation"],
+      "categories": ["technical", "coordination", "ecommerce"],
+      "seo": {
+        "metaTitle": "Technical Project Coordinator at Publicis Sapient - Christopher Belgrave",
+        "metaDescription": "Coordinated technical aspects of digital transformation projects for retail and financial services clients.",
+        "keywords": ["technical coordination", "Publicis Sapient", "digital transformation", "e-commerce"],
+        "ogImage": "/experience/publicis-og.jpg"
+      },
+      "company": "Publicis Sapient",
+      "location": "London, UK",
+      "duration": {
+        "start": "Jun 2017",
+        "end": "Feb 2019"
+      },
+      "description": "Coordinated technical aspects of digital transformation projects for retail and financial services clients. Worked closely with development teams to ensure technical requirements were met.",
+      "achievements": [
+        "Supported the successful launch of an e-commerce platform that generated $2M in first-quarter revenue",
+        "Streamlined project documentation processes, reducing onboarding time for new team members by 50%",
+        "Coordinated UAT testing phases across 5 major project releases with zero critical defects",
+        "Created technical specification templates that became company standard for all new projects",
+        "Managed technical requirements for 12+ concurrent projects",
+        "Achieved 100% on-time delivery rate for all coordinated technical milestones"
+      ],
+      "skills": [
+        "Technical Coordination",
+        "E-commerce",
+        "Requirements Gathering",
+        "UAT Testing",
+        "Documentation",
+        "Stakeholder Management",
+        "Quality Assurance",
+        "Process Improvement"
+      ],
+      "projects": ["ecommerce-platform-launch"],
+      "employmentType": "full-time",
+      "companySize": "large",
+      "industry": "Digital Transformation",
+      "responsibilities": [
+        "Coordinate technical requirements gathering and documentation",
+        "Facilitate communication between business and technical teams",
+        "Manage UAT testing processes and defect resolution",
+        "Maintain project documentation and technical specifications",
+        "Support development teams with resource coordination",
+        "Ensure compliance with technical standards and best practices"
+      ],
+      "technologies": ["Java", "Spring", "MySQL", "Jenkins", "JIRA", "Confluence", "Git"],
+      "teamSize": 6,
+      "reportingTo": "Technical Project Manager",
+      "directReports": 0,
+      "salary": {
+        "currency": "GBP",
+        "range": {
+          "min": 40000,
+          "max": 50000
+        }
+      },
+      "companyLogo": "/companies/publicis-logo.png",
+      "companyWebsite": "https://www.publicissapient.com",
+      "linkedInUrl": "https://linkedin.com/company/publicis-sapient",
+      "references": [
+        {
+          "name": "David Kumar",
+          "title": "Technical Project Manager",
+          "linkedIn": "https://linkedin.com/in/davidkumar"
+        }
+      ],
+      "isRemote": false
+    },
+    {
+      "id": "akqa-junior-producer",
+      "type": "experience",
+      "title": "Junior Digital Producer",
+      "slug": "junior-digital-producer-akqa",
+      "status": "published",
+      "featured": false,
+      "createdAt": "2015-09-01T00:00:00Z",
+      "updatedAt": "2017-05-31T00:00:00Z",
+      "publishedAt": "2017-05-31T00:00:00Z",
+      "version": {
+        "version": "1.0.0",
+        "timestamp": "2017-05-31T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Initial experience documentation"],
+        "hash": "f6g7h8i9j0k1l2m3"
+      },
+      "tags": ["Digital Production", "Content Management", "Creative Support"],
+      "categories": ["production", "digital", "creative"],
+      "seo": {
+        "metaTitle": "Junior Digital Producer at AKQA - Christopher Belgrave",
+        "metaDescription": "Assisted in the production of digital marketing campaigns and interactive experiences for sports and luxury brands.",
+        "keywords": ["digital production", "AKQA", "creative campaigns", "content management"],
+        "ogImage": "/experience/akqa-og.jpg"
+      },
+      "company": "AKQA",
+      "location": "London, UK",
+      "duration": {
+        "start": "Sep 2015",
+        "end": "May 2017"
+      },
+      "description": "Assisted in the production of digital marketing campaigns and interactive experiences for sports and luxury brands. Supported senior producers in day-to-day project management activities.",
+      "achievements": [
+        "Contributed to an award-winning interactive campaign for a major sportswear brand",
+        "Managed content updates and maintenance for multiple client websites",
+        "Coordinated with creative and development teams to ensure timely delivery of assets",
+        "Assisted in client presentations and status reporting",
+        "Maintained 100% accuracy in content management across 20+ client websites",
+        "Supported the production of 50+ digital campaigns during tenure"
+      ],
+      "skills": [
+        "Digital Production",
+        "Content Management",
+        "Creative Coordination",
+        "Client Communication",
+        "Social Media Campaigns",
+        "Asset Management",
+        "Quality Assurance"
+      ],
+      "projects": ["sportswear-interactive-campaign"],
+      "employmentType": "full-time",
+      "companySize": "medium",
+      "industry": "Digital Agency",
+      "responsibilities": [
+        "Assist in the production of digital marketing campaigns",
+        "Manage content updates for client websites",
+        "Coordinate asset delivery between creative and development teams",
+        "Support client communication and reporting",
+        "Maintain project documentation and timelines",
+        "Ensure quality control for all digital deliverables"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "WordPress", "Photoshop", "Illustrator"],
+      "teamSize": 4,
+      "reportingTo": "Senior Digital Producer",
+      "directReports": 0,
+      "salary": {
+        "currency": "GBP",
+        "range": {
+          "min": 28000,
+          "max": 35000
+        }
+      },
+      "companyLogo": "/companies/akqa-logo.png",
+      "companyWebsite": "https://www.akqa.com",
+      "linkedInUrl": "https://linkedin.com/company/akqa",
+      "references": [
+        {
+          "name": "Lisa Thompson",
+          "title": "Senior Digital Producer",
+          "linkedIn": "https://linkedin.com/in/lisathompson"
+        }
+      ],
+      "isRemote": false
+    }
+  ]
+}

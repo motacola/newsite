@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Christopher Belgrave Portfolio - Next.js
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, showcasing AI expertise and project management experience.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Tech Stack**: Next.js 14 with App Router, TypeScript, and Tailwind CSS
+- **Interactive Animations**: Framer Motion for smooth, engaging animations
+- **Responsive Design**: Mobile-first approach with custom design system
+- **AI Project Showcases**: Interactive demos and visualizations
+- **Performance Optimized**: Image optimization, lazy loading, and Core Web Vitals focused
+- **Accessibility First**: WCAG 2.1 AA compliant with keyboard navigation support
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14+ with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Animations**: Framer Motion
+- **Code Quality**: ESLint, Prettier
+- **Deployment**: Netlify (configured for GitHub integration)
+
+## 📁 Project Structure
+
+```
+portfolio-next/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   ├── components/          # Reusable React components
+│   │   ├── ui/             # Base UI components
+│   │   ├── sections/       # Page sections
+│   │   └── interactive/    # Interactive elements
+│   ├── lib/                # Utilities and configurations
+│   └── content/            # Content management
+├── public/                 # Static assets
+└── ...config files
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/motacola/portfolio.git
+cd portfolio/portfolio-next
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+- `npm run type-check` - Run TypeScript type checking
+- `npm run clean` - Clean build artifacts
 
-## Learn More
+## 🎨 Design System
 
-To learn more about Next.js, take a look at the following resources:
+The project uses a custom design system built on Tailwind CSS with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Color Palette**: Primary brand colors, AI/tech accents, and neutral grays
+- **Typography**: Inter font with fluid scaling
+- **Animations**: Custom keyframes and transitions
+- **Spacing**: Consistent spacing scale
+- **Components**: Reusable UI components with variants
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+The project is configured for deployment on Netlify with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **GitHub Integration**: Automatic deployments on push
+- **Build Settings**: Optimized for Next.js
+- **Environment Variables**: Configured for production
+- **Custom Domain**: SSL certificates included
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is private and proprietary to Christopher Belgrave.
+
+## 🤝 Contributing
+
+This is a personal portfolio project. For any inquiries, please contact Christopher Belgrave directly.

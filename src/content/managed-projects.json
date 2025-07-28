@@ -1,0 +1,363 @@
+{
+  "projects": [
+    {
+      "id": "maybelline-chromaverse",
+      "type": "project",
+      "title": "Maybelline ChromaVerse",
+      "slug": "maybelline-chromaverse",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2023-09-15T00:00:00Z",
+      "updatedAt": "2024-03-15T00:00:00Z",
+      "publishedAt": "2024-03-15T00:00:00Z",
+      "version": {
+        "version": "1.2.0",
+        "timestamp": "2024-03-15T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added AI capabilities section", "Updated metrics", "Enhanced technical details"],
+        "hash": "a1b2c3d4e5f6g7h8"
+      },
+      "tags": ["AR", "Beauty Tech", "Gaming", "Color Matching", "WebGL", "AI"],
+      "categories": ["ai", "interactive", "beauty"],
+      "seo": {
+        "metaTitle": "Maybelline ChromaVerse - AI-Powered AR Beauty Experience",
+        "metaDescription": "Revolutionary AR beauty experience combining AI-powered color matching with immersive gaming elements for Maybelline.",
+        "keywords": ["AR beauty", "AI color matching", "interactive gaming", "Maybelline", "beauty tech"],
+        "ogImage": "/projects/maybelline-og.jpg"
+      },
+      "client": "Maybelline",
+      "category": "ai",
+      "description": "Revolutionary AR beauty experience combining AI-powered color matching with immersive gaming elements. Created an interactive virtual world where users can explore makeup looks through AI-driven personalization.",
+      "shortDescription": "AI-powered AR beauty experience with gaming elements",
+      "media": {
+        "hero": "/projects/maybelline-hero.jpg",
+        "gallery": [
+          "/projects/maybelline-1.jpg",
+          "/projects/maybelline-2.jpg",
+          "/projects/maybelline-3.jpg"
+        ],
+        "video": "/projects/maybelline-demo.mp4",
+        "thumbnail": "/projects/maybelline-thumb.jpg"
+      },
+      "metrics": [
+        {
+          "label": "User Engagement",
+          "value": "340%",
+          "improvement": "+240%",
+          "icon": "users",
+          "trend": "up",
+          "category": "engagement",
+          "description": "Significant increase in user interaction with AR features"
+        },
+        {
+          "label": "Color Match Accuracy",
+          "value": "94%",
+          "improvement": "+34%",
+          "icon": "target",
+          "trend": "up",
+          "category": "technical",
+          "description": "AI-powered color matching precision improvement"
+        },
+        {
+          "label": "Session Duration",
+          "value": "8.5min",
+          "improvement": "+180%",
+          "icon": "clock",
+          "trend": "up",
+          "category": "engagement",
+          "description": "Users spending significantly more time exploring products"
+        },
+        {
+          "label": "Conversion Rate",
+          "value": "23%",
+          "improvement": "+156%",
+          "icon": "trending-up",
+          "trend": "up",
+          "category": "business",
+          "description": "Direct impact on purchase decisions and sales"
+        }
+      ],
+      "technologies": [
+        "TensorFlow.js",
+        "WebGL",
+        "Computer Vision",
+        "AR.js",
+        "Three.js",
+        "Machine Learning",
+        "Color Science",
+        "WebRTC"
+      ],
+      "timeline": "6 months",
+      "projectStatus": "completed",
+      "dateCompleted": "2024-03-15",
+      "dateStarted": "2023-09-15",
+      "interactive": {
+        "type": "demo",
+        "url": "/demos/maybelline-chromaverse",
+        "previewImage": "/projects/maybelline-preview.jpg",
+        "features": [
+          "Real-time AR color matching",
+          "Interactive gaming elements",
+          "Personalized recommendations",
+          "Social sharing capabilities"
+        ]
+      },
+      "challenges": [
+        "Achieving accurate color matching across different lighting conditions",
+        "Optimizing AR performance for mobile devices",
+        "Integrating gaming mechanics with beauty exploration",
+        "Ensuring cross-platform compatibility"
+      ],
+      "outcomes": [
+        "Increased user engagement by 240%",
+        "Improved color matching accuracy to 94%",
+        "Extended average session duration to 8.5 minutes",
+        "Boosted conversion rates by 156%"
+      ],
+      "aiCapabilities": [
+        {
+          "type": "computer-vision",
+          "description": "Real-time facial feature detection and color analysis",
+          "accuracy": 94,
+          "modelType": "Convolutional Neural Network",
+          "trainingData": "50K+ diverse facial images with color annotations",
+          "processingTime": "Sub-100ms per frame",
+          "dataVolume": "2TB training dataset",
+          "confidence": 96,
+          "features": ["Face detection", "Color matching", "Skin tone analysis", "Feature tracking"]
+        },
+        {
+          "type": "machine-learning",
+          "description": "Personalized product recommendation engine",
+          "accuracy": 87,
+          "modelType": "Collaborative Filtering + Deep Learning",
+          "trainingData": "User behavior data and product preferences",
+          "processingTime": "50ms per recommendation",
+          "dataVolume": "500GB user interaction data",
+          "confidence": 89,
+          "features": ["Behavioral analysis", "Preference learning", "Real-time recommendations", "A/B testing"]
+        }
+      ],
+      "businessImpact": {
+        "roi": "320%",
+        "userGrowth": "+240%",
+        "revenueIncrease": "+156%",
+        "productivityGain": "+180%",
+        "customerSatisfaction": "92%"
+      },
+      "technicalDetails": {
+        "architecture": "Progressive Web App with WebGL rendering",
+        "deployment": "CDN-distributed with edge computing",
+        "scalability": "Auto-scaling infrastructure supporting 100K+ concurrent users",
+        "performance": "Sub-100ms AR processing latency",
+        "dataProcessing": "Real-time image processing pipeline",
+        "security": "End-to-end encryption with biometric data protection",
+        "monitoring": "Real-time performance analytics and error tracking",
+        "apiEndpoints": ["/api/face-detection", "/api/color-match", "/api/recommendations"],
+        "databases": ["MongoDB", "Redis Cache", "PostgreSQL"],
+        "cloudServices": ["AWS Lambda", "CloudFront CDN", "S3 Storage"]
+      },
+      "testimonial": {
+        "quote": "The ChromaVerse project revolutionized how our customers interact with our products. The AI-powered color matching is incredibly accurate and the gaming elements keep users engaged for much longer.",
+        "author": "Sarah Chen",
+        "role": "Digital Innovation Director",
+        "company": "Maybelline",
+        "avatar": "/testimonials/sarah-chen.jpg"
+      },
+      "relatedProjects": ["ai-content-optimization"],
+      "collaborators": [
+        {
+          "name": "Alex Thompson",
+          "role": "Lead AI Engineer",
+          "company": "Ogilvy",
+          "linkedIn": "https://linkedin.com/in/alexthompson",
+          "avatar": "/team/alex-thompson.jpg"
+        },
+        {
+          "name": "Maria Rodriguez",
+          "role": "UX Designer",
+          "company": "Ogilvy",
+          "linkedIn": "https://linkedin.com/in/mariarodriguez",
+          "avatar": "/team/maria-rodriguez.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ai-content-optimization",
+      "type": "project",
+      "title": "AI Content Optimization Engine",
+      "slug": "ai-content-optimization-engine",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2023-09-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z",
+      "publishedAt": "2024-01-20T00:00:00Z",
+      "version": {
+        "version": "1.1.0",
+        "timestamp": "2024-01-20T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Enhanced NLP capabilities", "Added prediction accuracy metrics"],
+        "hash": "b2c3d4e5f6g7h8i9"
+      },
+      "tags": ["NLP", "Content Strategy", "Predictive Analytics", "Automation", "Performance", "AI"],
+      "categories": ["ai", "automation", "analytics"],
+      "seo": {
+        "metaTitle": "AI Content Optimization Engine - Automated Content Performance",
+        "metaDescription": "AI-powered content optimization system that analyzes performance data and predicts engagement rates.",
+        "keywords": ["AI content optimization", "predictive analytics", "content strategy", "automation"],
+        "ogImage": "/projects/ai-content-og.jpg"
+      },
+      "client": "Multiple Agencies",
+      "category": "ai",
+      "description": "Developed an AI-powered content optimization system that analyzes performance data, audience behavior, and market trends to automatically suggest content improvements and predict engagement rates.",
+      "shortDescription": "AI system for automated content optimization and performance prediction",
+      "media": {
+        "hero": "/projects/ai-content-hero.jpg",
+        "gallery": [
+          "/projects/ai-content-1.jpg",
+          "/projects/ai-content-2.jpg"
+        ],
+        "thumbnail": "/projects/ai-content-thumb.jpg"
+      },
+      "metrics": [
+        {
+          "label": "Content Performance",
+          "value": "185%",
+          "improvement": "+85%",
+          "icon": "bar-chart",
+          "trend": "up",
+          "category": "performance",
+          "description": "Overall content engagement and effectiveness improvement"
+        },
+        {
+          "label": "Time Saved",
+          "value": "12hrs/week",
+          "improvement": "75% reduction",
+          "icon": "clock",
+          "trend": "up",
+          "category": "performance",
+          "description": "Automated optimization reducing manual content work"
+        },
+        {
+          "label": "Prediction Accuracy",
+          "value": "87%",
+          "improvement": "+42%",
+          "icon": "target",
+          "trend": "up",
+          "category": "technical",
+          "description": "AI model accuracy in predicting content performance"
+        },
+        {
+          "label": "ROI Improvement",
+          "value": "230%",
+          "improvement": "+130%",
+          "icon": "dollar-sign",
+          "trend": "up",
+          "category": "business",
+          "description": "Return on investment from optimized content strategy"
+        }
+      ],
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "Natural Language Processing",
+        "TensorFlow",
+        "Data Analytics",
+        "API Integration",
+        "Machine Learning",
+        "Predictive Modeling"
+      ],
+      "timeline": "4 months",
+      "projectStatus": "completed",
+      "dateCompleted": "2024-01-20",
+      "dateStarted": "2023-09-20",
+      "interactive": {
+        "type": "visualization",
+        "url": "/demos/content-optimization",
+        "previewImage": "/projects/ai-content-preview.jpg",
+        "data": {
+          "chartType": "performance-comparison",
+          "datasets": ["before", "after", "predicted"]
+        },
+        "features": [
+          "Real-time performance analytics",
+          "Predictive engagement scoring",
+          "Automated content suggestions",
+          "Multi-platform optimization"
+        ]
+      },
+      "challenges": [
+        "Processing diverse content types and formats",
+        "Balancing automation with creative control",
+        "Integrating with multiple content management systems",
+        "Maintaining prediction accuracy across different industries"
+      ],
+      "outcomes": [
+        "Reduced content creation time by 75%",
+        "Improved content performance by 85%",
+        "Achieved 87% prediction accuracy",
+        "Generated 230% ROI improvement"
+      ],
+      "aiCapabilities": [
+        {
+          "type": "nlp",
+          "description": "Advanced text analysis and sentiment detection",
+          "accuracy": 89,
+          "modelType": "Transformer-based Language Model",
+          "trainingData": "2M+ content pieces with performance metrics",
+          "processingTime": "200ms per document",
+          "dataVolume": "1.5TB text corpus",
+          "confidence": 91,
+          "features": ["Sentiment analysis", "Topic modeling", "Content scoring", "Language detection"]
+        },
+        {
+          "type": "prediction",
+          "description": "Engagement rate and performance forecasting",
+          "accuracy": 87,
+          "modelType": "Ensemble Learning (Random Forest + Neural Network)",
+          "trainingData": "Historical performance data across 500+ campaigns",
+          "processingTime": "100ms per prediction",
+          "dataVolume": "800GB campaign data",
+          "confidence": 85,
+          "features": ["Trend analysis", "Performance forecasting", "Audience segmentation", "Content optimization"]
+        }
+      ],
+      "businessImpact": {
+        "roi": "230%",
+        "costSavings": "$120K annually per client",
+        "timeReduction": "75%",
+        "productivityGain": "+185%",
+        "errorReduction": "68%"
+      },
+      "technicalDetails": {
+        "architecture": "Microservices with ML pipeline orchestration",
+        "deployment": "Kubernetes cluster with auto-scaling",
+        "scalability": "Processes 10K+ content pieces daily",
+        "performance": "Sub-second content analysis and scoring",
+        "dataProcessing": "Distributed ML pipeline with batch and stream processing",
+        "security": "OAuth 2.0 with role-based access control",
+        "monitoring": "Prometheus metrics with Grafana dashboards",
+        "apiEndpoints": ["/api/analyze", "/api/predict", "/api/optimize", "/api/reports"],
+        "databases": ["Elasticsearch", "PostgreSQL", "InfluxDB"],
+        "cloudServices": ["Google Cloud ML", "BigQuery", "Cloud Storage"]
+      },
+      "testimonial": {
+        "quote": "This AI system transformed our content strategy. We now create more effective content in half the time, and the predictive insights help us stay ahead of trends.",
+        "author": "Marcus Rodriguez",
+        "role": "Head of Content Strategy",
+        "company": "Digital Marketing Collective",
+        "avatar": "/testimonials/marcus-rodriguez.jpg"
+      },
+      "relatedProjects": ["maybelline-chromaverse", "automated-video-editing"],
+      "collaborators": [
+        {
+          "name": "Dr. Emily Watson",
+          "role": "Data Scientist",
+          "company": "Ogilvy",
+          "linkedIn": "https://linkedin.com/in/emilywatson",
+          "avatar": "/team/emily-watson.jpg"
+        }
+      ]
+    }
+  ]
+}

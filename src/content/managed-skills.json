@@ -1,0 +1,316 @@
+{
+  "skills": [
+    {
+      "id": "ai-project-management",
+      "type": "skill",
+      "title": "AI Project Management",
+      "slug": "ai-project-management",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2022-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.2.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Updated proficiency level", "Added recent projects"],
+        "hash": "g7h8i9j0k1l2m3n4"
+      },
+      "tags": ["AI", "Project Management", "Leadership", "Strategy"],
+      "categories": ["technical", "management"],
+      "seo": {
+        "metaTitle": "AI Project Management Expertise - Christopher Belgrave",
+        "metaDescription": "Expert-level AI project management skills with 3+ years of experience leading complex AI implementations.",
+        "keywords": ["AI project management", "artificial intelligence", "project leadership", "ML projects"]
+      },
+      "name": "AI Project Management",
+      "category": "technical",
+      "proficiency": "expert",
+      "yearsOfExperience": 3,
+      "description": "Specialized expertise in managing complex AI and machine learning projects from conception to deployment. Experienced in coordinating cross-functional teams, managing AI model development lifecycles, and ensuring ethical AI implementation.",
+      "relatedSkills": ["machine-learning", "data-science", "agile-methodologies", "team-leadership"],
+      "projects": ["maybelline-chromaverse", "ai-content-optimization", "automated-video-editing"],
+      "certifications": ["pmp-certification", "ai-ethics-certification"],
+      "endorsements": {
+        "count": 47,
+        "sources": ["LinkedIn", "Colleagues", "Clients"]
+      },
+      "lastUsed": "2024-01-15",
+      "trending": true
+    },
+    {
+      "id": "machine-learning",
+      "type": "skill",
+      "title": "Machine Learning",
+      "slug": "machine-learning",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2021-06-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.3.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Enhanced with deep learning experience", "Added new frameworks"],
+        "hash": "h8i9j0k1l2m3n4o5"
+      },
+      "tags": ["Machine Learning", "AI", "Data Science", "Python", "TensorFlow"],
+      "categories": ["technical", "ai"],
+      "seo": {
+        "metaTitle": "Machine Learning Expertise - Christopher Belgrave",
+        "metaDescription": "Advanced machine learning skills with hands-on experience in TensorFlow, PyTorch, and production ML systems.",
+        "keywords": ["machine learning", "ML", "TensorFlow", "PyTorch", "neural networks"]
+      },
+      "name": "Machine Learning",
+      "category": "technical",
+      "proficiency": "advanced",
+      "yearsOfExperience": 4,
+      "description": "Comprehensive understanding of machine learning algorithms, model development, and deployment. Experience with supervised and unsupervised learning, neural networks, and production ML systems.",
+      "relatedSkills": ["python", "data-science", "tensorflow", "computer-vision", "nlp"],
+      "projects": ["maybelline-chromaverse", "ai-content-optimization", "automated-video-editing"],
+      "certifications": ["tensorflow-certification", "aws-ml-certification"],
+      "endorsements": {
+        "count": 52,
+        "sources": ["LinkedIn", "GitHub", "Kaggle"]
+      },
+      "lastUsed": "2024-01-10",
+      "trending": true
+    },
+    {
+      "id": "computer-vision",
+      "type": "skill",
+      "title": "Computer Vision",
+      "slug": "computer-vision",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2022-03-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.1.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added AR/VR experience", "Updated with latest projects"],
+        "hash": "i9j0k1l2m3n4o5p6"
+      },
+      "tags": ["Computer Vision", "OpenCV", "Image Processing", "AR", "VR"],
+      "categories": ["technical", "ai"],
+      "seo": {
+        "metaTitle": "Computer Vision Expertise - Christopher Belgrave",
+        "metaDescription": "Specialized computer vision skills with experience in facial recognition, AR applications, and real-time image processing.",
+        "keywords": ["computer vision", "OpenCV", "image processing", "facial recognition", "AR"]
+      },
+      "name": "Computer Vision",
+      "category": "technical",
+      "proficiency": "advanced",
+      "yearsOfExperience": 2,
+      "description": "Specialized in computer vision applications including facial recognition, object detection, and augmented reality implementations. Experience with OpenCV, real-time image processing, and AR frameworks.",
+      "relatedSkills": ["machine-learning", "python", "opencv", "ar-development", "image-processing"],
+      "projects": ["maybelline-chromaverse", "automated-video-editing"],
+      "certifications": ["opencv-certification"],
+      "endorsements": {
+        "count": 28,
+        "sources": ["LinkedIn", "Technical Conferences"]
+      },
+      "lastUsed": "2023-12-20",
+      "trending": true
+    },
+    {
+      "id": "natural-language-processing",
+      "type": "skill",
+      "title": "Natural Language Processing",
+      "slug": "natural-language-processing",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2021-09-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.2.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added transformer models experience", "Updated with GPT integration"],
+        "hash": "j0k1l2m3n4o5p6q7"
+      },
+      "tags": ["NLP", "Text Analysis", "Sentiment Analysis", "Transformers", "GPT"],
+      "categories": ["technical", "ai"],
+      "seo": {
+        "metaTitle": "Natural Language Processing Expertise - Christopher Belgrave",
+        "metaDescription": "Advanced NLP skills including sentiment analysis, text classification, and transformer model implementation.",
+        "keywords": ["NLP", "natural language processing", "sentiment analysis", "transformers", "text analysis"]
+      },
+      "name": "Natural Language Processing",
+      "category": "technical",
+      "proficiency": "advanced",
+      "yearsOfExperience": 3,
+      "description": "Expertise in natural language processing including sentiment analysis, text classification, named entity recognition, and transformer model implementation. Experience with NLTK, spaCy, and Hugging Face transformers.",
+      "relatedSkills": ["machine-learning", "python", "text-analysis", "sentiment-analysis", "transformers"],
+      "projects": ["ai-content-optimization"],
+      "certifications": ["nlp-specialization"],
+      "endorsements": {
+        "count": 34,
+        "sources": ["LinkedIn", "Research Papers"]
+      },
+      "lastUsed": "2024-01-05",
+      "trending": true
+    },
+    {
+      "id": "agile-methodologies",
+      "type": "skill",
+      "title": "Agile Methodologies",
+      "slug": "agile-methodologies",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2018-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.4.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added SAFe experience", "Updated with remote team management"],
+        "hash": "k1l2m3n4o5p6q7r8"
+      },
+      "tags": ["Agile", "Scrum", "Kanban", "Project Management", "Team Leadership"],
+      "categories": ["soft", "management"],
+      "seo": {
+        "metaTitle": "Agile Methodologies Expertise - Christopher Belgrave",
+        "metaDescription": "Expert-level Agile and Scrum experience with 6+ years of leading agile teams and implementing agile practices.",
+        "keywords": ["agile", "scrum", "kanban", "project management", "team leadership"]
+      },
+      "name": "Agile Methodologies",
+      "category": "soft",
+      "proficiency": "expert",
+      "yearsOfExperience": 6,
+      "description": "Extensive experience with Agile methodologies including Scrum, Kanban, and SAFe. Certified Scrum Master with proven track record of leading agile transformations and improving team velocity.",
+      "relatedSkills": ["team-leadership", "project-management", "scrum-master", "kanban", "safe"],
+      "projects": ["maybelline-chromaverse", "ai-content-optimization", "automated-video-editing"],
+      "certifications": ["certified-scrum-master", "safe-agilist"],
+      "endorsements": {
+        "count": 63,
+        "sources": ["LinkedIn", "Team Members", "Stakeholders"]
+      },
+      "lastUsed": "2024-01-15",
+      "trending": false
+    },
+    {
+      "id": "team-leadership",
+      "type": "skill",
+      "title": "Team Leadership",
+      "slug": "team-leadership",
+      "status": "published",
+      "featured": true,
+      "createdAt": "2019-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.3.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added cross-functional team experience", "Updated with mentoring achievements"],
+        "hash": "l2m3n4o5p6q7r8s9"
+      },
+      "tags": ["Leadership", "Team Management", "Mentoring", "Communication", "Strategy"],
+      "categories": ["soft", "management"],
+      "seo": {
+        "metaTitle": "Team Leadership Expertise - Christopher Belgrave",
+        "metaDescription": "Proven team leadership skills with experience managing cross-functional teams of up to 15 members.",
+        "keywords": ["team leadership", "management", "mentoring", "cross-functional teams"]
+      },
+      "name": "Team Leadership",
+      "category": "soft",
+      "proficiency": "expert",
+      "yearsOfExperience": 5,
+      "description": "Proven ability to lead and inspire cross-functional teams. Experience managing teams of up to 15 members, including developers, designers, data scientists, and stakeholders. Strong focus on mentoring and professional development.",
+      "relatedSkills": ["communication", "mentoring", "conflict-resolution", "performance-management", "strategic-thinking"],
+      "projects": ["maybelline-chromaverse", "ai-content-optimization", "automated-video-editing"],
+      "certifications": ["leadership-certification"],
+      "endorsements": {
+        "count": 71,
+        "sources": ["LinkedIn", "Direct Reports", "Peers", "Management"]
+      },
+      "lastUsed": "2024-01-15",
+      "trending": false
+    },
+    {
+      "id": "python",
+      "type": "skill",
+      "title": "Python",
+      "slug": "python-programming",
+      "status": "published",
+      "featured": false,
+      "createdAt": "2020-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.2.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added FastAPI experience", "Updated with async programming"],
+        "hash": "m3n4o5p6q7r8s9t0"
+      },
+      "tags": ["Python", "Programming", "Data Science", "Web Development", "Automation"],
+      "categories": ["technical", "programming"],
+      "seo": {
+        "metaTitle": "Python Programming Expertise - Christopher Belgrave",
+        "metaDescription": "Advanced Python programming skills with experience in data science, web development, and automation.",
+        "keywords": ["python", "programming", "data science", "web development", "automation"]
+      },
+      "name": "Python",
+      "category": "technical",
+      "proficiency": "advanced",
+      "yearsOfExperience": 4,
+      "description": "Proficient in Python for data science, machine learning, web development, and automation. Experience with frameworks like Django, FastAPI, pandas, NumPy, and scikit-learn.",
+      "relatedSkills": ["machine-learning", "data-science", "web-development", "automation", "django"],
+      "projects": ["ai-content-optimization", "automated-video-editing"],
+      "certifications": ["python-certification"],
+      "endorsements": {
+        "count": 41,
+        "sources": ["GitHub", "LinkedIn", "Code Reviews"]
+      },
+      "lastUsed": "2024-01-08",
+      "trending": false
+    },
+    {
+      "id": "data-analytics",
+      "type": "skill",
+      "title": "Data Analytics",
+      "slug": "data-analytics",
+      "status": "published",
+      "featured": false,
+      "createdAt": "2019-06-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z",
+      "publishedAt": "2024-01-01T00:00:00Z",
+      "version": {
+        "version": "1.3.0",
+        "timestamp": "2024-01-01T00:00:00Z",
+        "author": "Christopher Belgrave",
+        "changes": ["Added advanced visualization skills", "Updated with real-time analytics"],
+        "hash": "n4o5p6q7r8s9t0u1"
+      },
+      "tags": ["Data Analytics", "Visualization", "Statistics", "Business Intelligence", "Reporting"],
+      "categories": ["technical", "analytics"],
+      "seo": {
+        "metaTitle": "Data Analytics Expertise - Christopher Belgrave",
+        "metaDescription": "Advanced data analytics skills with experience in statistical analysis, data visualization, and business intelligence.",
+        "keywords": ["data analytics", "data visualization", "statistics", "business intelligence", "reporting"]
+      },
+      "name": "Data Analytics",
+      "category": "technical",
+      "proficiency": "advanced",
+      "yearsOfExperience": 5,
+      "description": "Comprehensive data analytics skills including statistical analysis, data visualization, and business intelligence. Experience with tools like Tableau, Power BI, Google Analytics, and custom dashboard development.",
+      "relatedSkills": ["statistics", "data-visualization", "business-intelligence", "sql", "excel"],
+      "projects": ["ai-content-optimization", "automated-reporting-dashboard"],
+      "certifications": ["google-analytics-certification", "tableau-certification"],
+      "endorsements": {
+        "count": 38,
+        "sources": ["LinkedIn", "Clients", "Stakeholders"]
+      },
+      "lastUsed": "2024-01-12",
+      "trending": false
+    }
+  ]
+}
