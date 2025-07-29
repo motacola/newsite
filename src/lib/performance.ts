@@ -45,7 +45,7 @@ class PerformanceMonitor {
 
     // First Input Delay (FID)
     this.observeMetric('first-input', (entries) => {
-      const firstEntry = entries[0];
+      const firstEntry = entries[0] as any;
       this.recordMetric('FID', firstEntry.processingStart - firstEntry.startTime);
     });
 
@@ -132,8 +132,8 @@ class PerformanceMonitor {
 
   private sendToAnalytics(metric: PerformanceMetric): void {
     // Example: Send to Google Analytics 4
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'web_vitals', {
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('event', 'web_vitals', {
         event_category: 'Performance',
         event_label: metric.name,
         value: Math.round(metric.value),
@@ -197,8 +197,8 @@ export const monitorResourceTiming = (): void => {
 };
 
 // Memory usage monitoring
-export const monitorMemoryUsage = (): void => {
-  if (typeof window === 'undefined' || !('memory' in performance)) return;
+export const monitorMemoryUsage = (): any => {
+  if (typeof window === 'undefined' || !('memory' in performance)) return null;
 
   const memory = (performance as any).memory;
   const memoryInfo = {
@@ -252,8 +252,8 @@ export const reportWebVitals = (metric: WebVitalsMetric): void => {
   // Send to analytics in production
   if (process.env.NODE_ENV === 'production') {
     // Example: Google Analytics 4
-    if (typeof gtag !== 'undefined') {
-      gtag('event', metric.name, {
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('event', metric.name, {
         event_category: 'Web Vitals',
         value: Math.round(metric.value),
         event_label: metric.id,

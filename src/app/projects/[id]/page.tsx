@@ -22,6 +22,15 @@ interface ProjectPageProps {
   }>;
 }
 
+export async function generateStaticParams() {
+  const { getAIProjects } = await import('@/content/ai-projects');
+  const projects = await getAIProjects();
+  
+  return projects.map((project) => ({
+    id: project.id,
+  }));
+}
+
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
   const { id } = await params;
   const project = getAIProjectByIdSync(id);

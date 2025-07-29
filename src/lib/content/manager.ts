@@ -34,13 +34,13 @@ export class ContentManager {
    * Create new content item
    */
   async create<T extends ContentMetadata>(
-    data: Omit<T, 'id' | 'createdAt' | 'updatedAt' | 'version'>,
+    data: Omit<T, 'id' | 'createdAt' | 'updatedAt' | 'version'> & { id?: string },
     author: string = 'system'
   ): Promise<{ success: boolean; data?: T; errors?: string[] }> {
     try {
       // Generate ID and slug if not provided
       const id = data.id || generateId();
-      const slug = data.slug || generateSlug(data.title);
+      const slug = (data as any).slug || generateSlug((data as any).title);
       
       // Create full content object
       const now = new Date().toISOString();
@@ -174,7 +174,7 @@ export class ContentManager {
       }
 
       // Create final backup
-      ContentVersionManager.createBackup(id, content.type, content, content.version, 'pre-delete');
+      ContentVersionManager.createBackup(id, content.type, content, content.version, 'manual');
 
       // Remove from indices
       this.removeFromIndices(content);
