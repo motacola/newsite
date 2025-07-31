@@ -50,6 +50,32 @@ global.cancelAnimationFrame = jest.fn()
 // Mock fetch globally
 global.fetch = jest.fn()
 
+// Mock Framer Motion
+jest.mock('framer-motion', () => ({
+  motion: {
+    div: ({ children, ...props }) => <div {...props}>{children}</div>,
+    section: ({ children, ...props }) => <section {...props}>{children}</section>,
+    button: ({ children, ...props }) => <button {...props}>{children}</button>,
+    span: ({ children, ...props }) => <span {...props}>{children}</span>,
+    h1: ({ children, ...props }) => <h1 {...props}>{children}</h1>,
+    h2: ({ children, ...props }) => <h2 {...props}>{children}</h2>,
+    h3: ({ children, ...props }) => <h3 {...props}>{children}</h3>,
+    p: ({ children, ...props }) => <p {...props}>{children}</p>,
+    img: ({ children, ...props }) => <img {...props}>{children}</img>,
+    video: ({ children, ...props }) => <video {...props}>{children}</video>,
+  },
+  AnimatePresence: ({ children }) => children,
+  useMotionValue: () => ({ set: jest.fn(), get: jest.fn(() => 0) }),
+  useTransform: () => 0,
+  useSpring: () => 0,
+  useAnimation: () => ({
+    start: jest.fn(),
+    stop: jest.fn(),
+    set: jest.fn(),
+  }),
+  useInView: () => true,
+}))
+
 // Mock console methods to reduce noise in tests
 const originalError = console.error
 const originalWarn = console.warn
@@ -58,7 +84,11 @@ beforeAll(() => {
   console.error = (...args) => {
     if (
       typeof args[0] === 'string' &&
-      args[0].includes('Warning: ReactDOM.render is no longer supported')
+      (args[0].includes('Warning: ReactDOM.render is no longer supported') ||
+       args[0].includes('React does not recognize the') ||
+       args[0].includes('Unknown event handler property') ||
+       args[0].includes('An update to') ||
+       args[0].includes('Target container is not a DOM element'))
     ) {
       return
     }

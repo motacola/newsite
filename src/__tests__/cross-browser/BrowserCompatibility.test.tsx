@@ -3,9 +3,10 @@
  * Tests functionality across different browser environments
  */
 
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { screen, fireEvent, waitFor } from '@testing-library/react';
+import { render } from '../test-utils';
 import userEvent from '@testing-library/user-event';
-import { Hero } from '@/components/sections/Hero';
+import Hero from '@/components/sections/Hero';
 import { Navigation } from '@/components/sections/Navigation';
 import { ContactForm } from '@/components/ui/ContactForm';
 import { MediaGallery } from '@/components/ui/MediaGallery';

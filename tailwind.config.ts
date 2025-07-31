@@ -43,8 +43,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'ui-monospace', 'monospace'],
+        display: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         display: ['clamp(2.5rem, 5vw, 4rem)', { lineHeight: '1.1' }],

@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { screen, fireEvent, waitFor } from '@testing-library/react';
+import { render } from '../../../__tests__/test-utils';
 import userEvent from '@testing-library/user-event';
 import { MediaGallery, MediaItem } from '../MediaGallery';
 

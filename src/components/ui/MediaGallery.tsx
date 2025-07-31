@@ -67,7 +67,7 @@ export const MediaGallery: React.FC<MediaGalleryProps> = ({
   onClose,
   onIndexChange,
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentIndex, setCurrentIndex] = useState(Math.min(initialIndex, items?.length ? items.length - 1 : 0));
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
   const [panOffset, setPanOffset] = useState({ x: 0, y: 0 });
@@ -76,7 +76,7 @@ export const MediaGallery: React.FC<MediaGalleryProps> = ({
 
   const imageRef = useRef<HTMLDivElement>(null);
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
-  const currentItem = items[currentIndex];
+  const currentItem = items.length > 0 ? items[currentIndex] : null;
 
   // Motion values for smooth animations
   useMotionValue(0);
@@ -710,6 +710,15 @@ export const MediaGallery: React.FC<MediaGalleryProps> = ({
       )}
     </div>
   );
+
+  // Handle empty items array
+  if (!items || items.length === 0) {
+    return (
+      <div className={`flex items-center justify-center p-8 text-gray-500 ${className}`}>
+        <p>No media items to display</p>
+      </div>
+    );
+  }
 
   // Render based on layout
   if (layout === 'grid') {
