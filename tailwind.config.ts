@@ -16,17 +16,20 @@ const config: Config = {
           200: '#c7d6fe',
           300: '#a5b8fc',
           400: '#8b93f8',
-          500: '#3b82f6', // Main brand color
-          600: '#2563eb',
-          700: '#1e293b', // Main brand color
+          500: '#ff6b35', // Creative orange
+          600: '#e55a2b',
+          700: '#cc4e24', // Darker orange
           800: '#1e40af',
-          900: '#0a0e1a', // Deep navy for headers
+          900: '#1a1a1a', // Deep charcoal for headers
         },
-        // AI/Tech Accent Colors
+        // Creative Agency Accent Colors
         accent: {
-          cyan: '#06b6d4',
-          purple: '#8b5cf6',
-          orange: '#f97316',
+          cyan: '#00d4ff',
+          purple: '#9d4edd',
+          orange: '#ff6b35',
+          yellow: '#ffd23f',
+          pink: '#ff006e',
+          green: '#06ffa5',
         },
         // Enhanced gray palette
         gray: {
@@ -39,7 +42,16 @@ const config: Config = {
           600: '#475569',
           700: '#334155',
           800: '#1e293b',
-          900: '#0f172a',
+          900: '#1a1a1a',
+        },
+        // Creative specific colors
+        creative: {
+          orange: '#ff6b35',
+          purple: '#9d4edd',
+          blue: '#00d4ff',
+          yellow: '#ffd23f',
+          pink: '#ff006e',
+          green: '#06ffa5',
         },
       },
       fontFamily: {

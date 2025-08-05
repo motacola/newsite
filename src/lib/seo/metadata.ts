@@ -5,22 +5,24 @@ import { Project } from '@/lib/types';
 export const baseMetadata: Metadata = {
   title: {
     template: '%s | Christopher Belgrave',
-    default: 'Christopher Belgrave - AI Innovation & Project Leadership',
+    default: 'Christopher Belgrave - Creative Technologist & Digital Innovator',
   },
-  description: 'AI Project Manager and Digital Specialist transforming creative workflows through artificial intelligence and strategic project management. Delivering measurable results in advertising, gaming, and digital experiences.',
+  description: 'Award-winning creative technologist specializing in AI-powered digital experiences, immersive media, and cutting-edge advertising campaigns. Crafting extraordinary solutions that push creative boundaries.',
   keywords: [
-    'AI Project Manager',
+    'Creative Technologist',
+    'Digital Innovator',
     'Artificial Intelligence',
-    'Digital Transformation',
     'Creative Technology',
-    'Project Management',
+    'Interactive Media',
+    'Immersive Experiences',
     'Machine Learning',
     'Computer Vision',
     'AR/VR Development',
     'Digital Marketing',
-    'Innovation Leadership',
+    'Creative Campaigns',
     'Technology Strategy',
-    'Process Optimization'
+    'Digital Art',
+    'Interactive Design'
   ],
   authors: [{ name: 'Christopher Belgrave' }],
   creator: 'Christopher Belgrave',

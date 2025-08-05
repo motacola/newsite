@@ -13,11 +13,11 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Work', href: '#projects' },
+  { label: 'Services', href: '#services' },
   { label: 'Experience', href: '/experience' },
-  { label: 'CV', href: '/cv' },
   { label: 'Showreel', href: '#showreel' },
+  { label: 'About', href: '#about' },
   { label: 'Contact', href: '/contact' },
 ];
 

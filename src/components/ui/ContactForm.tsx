@@ -145,9 +145,9 @@ export function ContactForm() {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-10">
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Send Me a Message</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Start a Conversation</h2>
         <p className="text-gray-600">
-          I typically respond within 24 hours. Let's discuss your project!
+          Ready to create something extraordinary? Let's discuss your vision and bring it to life.
         </p>
       </div>
 

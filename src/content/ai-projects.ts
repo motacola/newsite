@@ -8,8 +8,8 @@ export const aiProjects: Project[] = [
     title: 'Maybelline ChromaVerse',
     client: 'Maybelline',
     category: 'ai',
-    description: 'Revolutionary AR beauty experience combining AI-powered color matching with immersive gaming elements. Created an interactive virtual world where users can explore makeup looks through AI-driven personalization.',
-    shortDescription: 'AI-powered AR beauty experience with gaming elements',
+    description: 'Revolutionary AR beauty experience that transforms how users discover and try makeup. This immersive digital world combines cutting-edge AI color matching with engaging gaming mechanics, creating an entirely new category of beauty interaction.',
+    shortDescription: 'Immersive AR beauty experience with AI-powered personalization',
     media: {
       hero: '/projects/maybelline-hero.jpg',
       gallery: [
@@ -149,11 +149,11 @@ export const aiProjects: Project[] = [
   },
   {
     id: 'ai-content-optimization',
-    title: 'AI Content Optimization Engine',
-    client: 'Multiple Agencies',
+    title: 'Creative Intelligence Platform',
+    client: 'Leading Creative Agencies',
     category: 'ai',
-    description: 'Developed an AI-powered content optimization system that analyzes performance data, audience behavior, and market trends to automatically suggest content improvements and predict engagement rates.',
-    shortDescription: 'AI system for automated content optimization and performance prediction',
+    description: 'An intelligent creative platform that empowers agencies to craft more impactful campaigns. By analyzing audience behavior, creative trends, and performance data, it provides actionable insights that elevate creative work and maximize engagement.',
+    shortDescription: 'AI-powered creative intelligence for campaign optimization',
     media: {
       hero: '/projects/ai-content-hero.jpg',
       gallery: [

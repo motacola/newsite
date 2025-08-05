@@ -60,24 +60,25 @@ export function ProjectCard({
   const getStatusColor = (status?: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+        return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 border border-green-200';
       case 'in-progress':
-        return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
+        return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 border border-yellow-200';
       case 'planned':
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
+        return 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200 border border-gray-200';
       default:
-        return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+        return 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200 border border-orange-200';
     }
   };
 
   return (
     <motion.div
       className={`
-        relative bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden
-        border border-gray-200 dark:border-gray-700
-        ${variant === 'featured' ? 'ring-2 ring-blue-500 ring-opacity-50 shadow-xl' : ''}
+        relative bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden
+        border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-500
+        ${variant === 'featured' ? 'ring-2 ring-orange-500 ring-opacity-50 shadow-creative' : ''}
         ${variant === 'compact' ? 'max-w-sm' : 'w-full max-w-4xl'}
-        ${isExpanded ? 'shadow-2xl' : ''}
+        ${isExpanded ? 'shadow-creative' : ''}
+        transition-all duration-300 hover:shadow-creative hover:-translate-y-1
       `}
       variants={cardVariants}
       initial="default"
@@ -92,14 +93,14 @@ export function ProjectCard({
           src={project.media.hero}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 hover:scale-110"
+          className="object-cover transition-transform duration-700 hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-orange-900/20 to-transparent" />
         
         {/* Badges */}
         <div className="absolute top-4 left-4 flex gap-2">
-          <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">
-            AI Project
+          <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-purple-500 text-white text-sm font-medium rounded-full shadow-lg">
+            Creative Tech
           </span>
           {project.status && (
             <span className={`px-3 py-1 text-sm font-medium rounded-full ${getStatusColor(project.status)}`}>
@@ -111,7 +112,7 @@ export function ProjectCard({
         {/* Featured Badge */}
         {project.featured && (
           <div className="absolute top-4 right-4">
-            <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-medium rounded-full shadow-lg">
+            <span className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-sm font-medium rounded-full shadow-lg animate-creative-pulse">
               ⭐ Featured
             </span>
           </div>
@@ -123,7 +124,7 @@ export function ProjectCard({
             <div className="flex gap-3 text-white">
               {project.metrics.slice(0, 2).map((metric, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-lg font-bold drop-shadow-lg">
+                  <div className="text-lg font-bold drop-shadow-lg text-orange-300">
                     {metric.value}
                   </div>
                   <div className="text-xs opacity-90">
@@ -157,7 +158,10 @@ export function ProjectCard({
           </div>
           
           <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">
-            {project.client} • {project.timeline}
+            <span className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              {project.client} • {project.timeline}
+            </span>
           </p>
           
           <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">

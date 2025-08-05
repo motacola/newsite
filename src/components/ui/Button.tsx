@@ -41,12 +41,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'relative inline-flex items-center justify-center font-medium transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 overflow-hidden';
     
     const variants = {
-      primary: 'bg-primary-500 text-white hover:bg-primary-600 hover:shadow-glow hover:-translate-y-0.5 active:bg-primary-700 active:translate-y-0',
-      secondary: 'bg-gray-100 text-gray-900 hover:bg-gray-200 hover:shadow-soft hover:-translate-y-0.5 active:bg-gray-300 active:translate-y-0',
-      outline: 'border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0',
-      ghost: 'text-primary-500 hover:bg-primary-50 hover:text-primary-600 hover:-translate-y-0.5 active:bg-primary-100 active:translate-y-0',
-      accent: 'bg-gradient-accent text-white hover:shadow-glow-accent hover:scale-105 hover:-translate-y-0.5 active:scale-100 active:translate-y-0',
-      gradient: 'bg-gradient-primary text-white hover:shadow-glow hover:scale-105 hover:-translate-y-0.5 active:scale-100 active:translate-y-0',
+      primary: 'bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 hover:shadow-creative hover:-translate-y-0.5 active:translate-y-0',
+      secondary: 'bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 hover:shadow-soft hover:-translate-y-0.5 active:translate-y-0',
+      outline: 'border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white hover:shadow-creative hover:-translate-y-0.5 active:translate-y-0',
+      ghost: 'text-orange-400 hover:bg-orange-500/10 hover:text-orange-300 hover:-translate-y-0.5 active:bg-orange-500/20 active:translate-y-0',
+      accent: 'bg-gradient-to-r from-purple-500 to-cyan-400 text-white hover:from-purple-600 hover:to-cyan-500 hover:scale-105 hover:-translate-y-0.5 active:scale-100 active:translate-y-0',
+      gradient: 'bg-gradient-to-r from-orange-500 via-purple-500 to-cyan-400 text-white hover:scale-105 hover:-translate-y-0.5 active:scale-100 active:translate-y-0',
     };
 
     const sizes = {

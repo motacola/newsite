@@ -147,9 +147,9 @@ export function ContactInfo() {
         
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
         <p className="text-lg text-gray-600 leading-relaxed">
-          I'm always interested in hearing about new projects and opportunities. 
-          Whether you have a question about my work or want to discuss a potential 
-          collaboration, feel free to reach out.
+          We're passionate about creating innovative digital experiences that captivate and inspire. 
+          Whether you're looking to launch a groundbreaking campaign or explore new creative territories, 
+          let's collaborate to make your vision a reality.
         </p>
       </motion.div>
 

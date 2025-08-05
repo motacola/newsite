@@ -28,19 +28,19 @@ export default function ContactPage() {
       
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/5 to-accent-cyan/5" />
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-orange-50 via-purple-50 to-cyan-50">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-purple-500/5" />
         <Container>
           <AnimatedSection>
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Let's Work{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-accent-cyan">
-                  Together
+                Let's Create{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
+                  Something Amazing
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                Ready to bring your next project to life? I'd love to hear about your vision and explore how we can collaborate.
+                Ready to push creative boundaries? Let's discuss your vision and craft an extraordinary digital experience together.
               </p>
               
               {/* Social Sharing */}

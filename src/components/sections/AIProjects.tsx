@@ -21,8 +21,8 @@ interface AIProjectsProps {
 
 export function AIProjects({ 
   projects, 
-  title = "AI Project Showcase",
-  subtitle = "Innovative AI solutions that drive real business impact",
+  title = "Featured Work",
+  subtitle = "Cutting-edge digital experiences that push creative boundaries",
   showAll = false,
   enableFiltering = true
 }: AIProjectsProps) {
@@ -96,7 +96,7 @@ export function AIProjects({
   };
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-orange-50/30 to-purple-50/30 dark:bg-gray-900">
       <Container>
         {/* Header */}
         <motion.div
@@ -105,10 +105,10 @@ export function AIProjects({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 creative-text-gradient">
             {title}
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </motion.div>

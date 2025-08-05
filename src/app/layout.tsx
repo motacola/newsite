@@ -16,7 +16,11 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = baseMetadata;
+export const metadata: Metadata = {
+  ...baseMetadata,
+  title: 'Christopher Belgrave - Creative Technologist & Digital Innovator',
+  description: 'Award-winning creative technologist specializing in AI-powered digital experiences, immersive media, and cutting-edge advertising campaigns.',
+};
 
 export default function RootLayout({
   children,
@@ -65,8 +69,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="CB Portfolio" />
         {/* Theme color for mobile browsers */}
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="msapplication-TileColor" content="#3b82f6" />
+        <meta name="theme-color" content="#ff6b35" />
+        <meta name="msapplication-TileColor" content="#ff6b35" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

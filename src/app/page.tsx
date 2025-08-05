@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import Hero from '@/components/sections/Hero';
 import { AIProjects } from '@/components/sections/AIProjects';
+import { Services } from '@/components/sections/Services';
 import { getAIProjectsSync } from '@/content/ai-projects';
 import { generatePortfolioStructuredData } from '@/lib/seo/structured-data';
 import { SocialShare } from '@/components/ui/SocialShare';
@@ -13,27 +14,26 @@ export default async function Home() {
   
   const heroData = {
     title: "Christopher Belgrave",
-    subtitle: "AI Innovation & Project Leadership",
-    description: "Transforming creative workflows through artificial intelligence and strategic project management. Delivering measurable results in advertising, gaming, and digital experiences.",
+    subtitle: "Creative Technologist & Digital Innovator",
+    description: "Crafting extraordinary digital experiences through cutting-edge technology and creative vision. Specializing in AI-powered solutions for advertising, gaming, and immersive media.",
     ctaButtons: [
       {
-        text: "View AI Projects",
+        text: "Explore Our Work",
         href: "#projects",
         variant: "accent" as const,
       },
       {
-        text: "Download CV",
-        href: "/Christopher_Belgrave_CV.pdf",
+        text: "Start a Project",
+        href: "/contact",
         variant: "outline" as const,
-        external: true,
       },
     ],
     typewriterTexts: [
-      "AI Strategy & Implementation",
-      "Creative Technology Leadership",
-      "Digital Transformation",
-      "Project Management Excellence",
-      "Innovation & Process Optimization",
+      "Creative Technology Solutions",
+      "Immersive Digital Experiences",
+      "AI-Powered Innovations",
+      "Interactive Media Design",
+      "Next-Generation Campaigns",
     ],
     // Enhanced background media with video support and responsive breakpoints
     backgroundMedia: [
@@ -187,12 +187,22 @@ export default async function Home() {
           }>
             <AIProjects 
               projects={aiProjects}
-              title="AI Project Showcase"
-              subtitle="Interactive demonstrations of AI-powered solutions that drive real business impact"
+              title="Featured Work"
+              subtitle="Cutting-edge digital experiences that blend creativity with advanced technology"
               showAll={false}
             />
           </Suspense>
         </section>
+        
+        {/* Services Section */}
+        <Suspense fallback={
+          <div className="py-20 text-center" role="status" aria-live="polite">
+            <span className="sr-only">Loading services...</span>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-500 mx-auto"></div>
+          </div>
+        }>
+          <Services />
+        </Suspense>
         
         {/* Accessibility Toolbar */}
         <AccessibilityToolbar />
@@ -200,9 +210,9 @@ export default async function Home() {
         {/* Floating Social Share */}
         <SocialShare
           url={generateShareableUrl('/', 'floating', 'home_share')}
-          title="Christopher Belgrave - AI Innovation & Project Leadership"
-          description="AI Project Manager and Digital Specialist transforming creative workflows through artificial intelligence."
-          hashtags={['AI', 'ProjectManagement', 'Innovation', 'DigitalTransformation']}
+          title="Christopher Belgrave - Creative Technologist & Digital Innovator"
+          description="Award-winning creative technologist crafting extraordinary digital experiences through cutting-edge technology."
+          hashtags={['CreativeTech', 'DigitalInnovation', 'AI', 'InteractiveMedia']}
           variant="floating"
           size="md"
         />

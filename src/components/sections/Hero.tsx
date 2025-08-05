@@ -102,13 +102,13 @@ const Hero: React.FC<HeroProps> = ({
   const mediaToUse = backgroundMedia || defaultBackgroundMedia;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-purple-900 to-orange-900">
       {/* Background Media System */}
       <BackgroundMedia
         media={mediaToUse}
         className="absolute inset-0"
         overlay={true}
-        overlayOpacity={0.6}
+        overlayOpacity={0.4}
         controls={showMediaControls}
         autoPlay={true}
         muted={true}
@@ -123,8 +123,8 @@ const Hero: React.FC<HeroProps> = ({
         enableFullscreen={enableFullscreen}
       />
 
-      {/* Fallback Geometric Background (when no media or as overlay) */}
-      <div className="absolute inset-0 overflow-hidden opacity-30">
+      {/* Creative Geometric Background */}
+      <div className="absolute inset-0 overflow-hidden opacity-20">
         <GeometricBackground />
       </div>
 
@@ -142,7 +142,7 @@ const Hero: React.FC<HeroProps> = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-medium text-white/90 mb-6">
+            <span className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500/20 to-purple-500/20 backdrop-blur-sm border border-orange-500/30 rounded-full text-sm font-medium text-white/90 mb-6 creative-shadow">
               {subtitle}
             </span>
           </motion.div>
@@ -153,7 +153,7 @@ const Hero: React.FC<HeroProps> = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Display className="text-white mb-4">
+            <Display className="text-white mb-4 creative-text-gradient">
               {title}
             </Display>
           </motion.div>
@@ -165,12 +165,12 @@ const Hero: React.FC<HeroProps> = ({
             transition={{ duration: 0.6, delay: 0.5 }}
             className="h-16 flex items-center justify-center"
           >
-            <div className="text-2xl md:text-3xl font-semibold text-accent-cyan">
+            <div className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-purple-400">
               {displayText}
               <motion.span
                 animate={{ opacity: [1, 0] }}
                 transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }}
-                className="inline-block w-0.5 h-8 bg-accent-cyan ml-1"
+                className="inline-block w-0.5 h-8 bg-orange-400 ml-1"
               />
             </div>
           </motion.div>
@@ -182,7 +182,7 @@ const Hero: React.FC<HeroProps> = ({
             transition={{ duration: 0.6, delay: 0.7 }}
             className="max-w-2xl mx-auto"
           >
-            <Lead className="text-white/80">
+            <Lead className="text-white/90 text-lg leading-relaxed">
               {description}
             </Lead>
           </motion.div>
@@ -243,13 +243,13 @@ const FloatingButton: React.FC<{
     >
       {external ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
-          <Button variant={variant} size="lg" className="shadow-glow">
+          <Button variant={variant} size="lg" className="creative-shadow hover:animate-creative-pulse">
             {children}
           </Button>
         </a>
       ) : (
         <a href={href}>
-          <Button variant={variant} size="lg" className="shadow-glow">
+          <Button variant={variant} size="lg" className="creative-shadow hover:animate-creative-pulse">
             {children}
           </Button>
         </a>
@@ -283,7 +283,7 @@ const GeometricBackground: React.FC = () => {
         const initialY = Math.random() * dimensions.height;
         const targetX = Math.random() * dimensions.width;
         const targetY = Math.random() * dimensions.height;
-        const size = 100 + Math.random() * 100;
+        const size = 60 + Math.random() * 120;
         
         return (
           <motion.div
@@ -314,10 +314,12 @@ const GeometricBackground: React.FC = () => {
           >
             <div 
               className={`w-full h-full ${
-                i % 3 === 0 ? 'bg-accent-cyan' : 
-                i % 3 === 1 ? 'bg-accent-purple' : 'bg-accent-orange'
+                i % 4 === 0 ? 'bg-orange-500' : 
+                i % 4 === 1 ? 'bg-purple-500' : 
+                i % 4 === 2 ? 'bg-cyan-400' : 'bg-pink-500'
               } ${
-                i % 2 === 0 ? 'rounded-full' : 'rounded-lg'
+                i % 3 === 0 ? 'rounded-full' : 
+                i % 3 === 1 ? 'rounded-lg' : 'rounded-none rotate-45'
               }`}
             />
           </motion.div>
@@ -332,12 +334,15 @@ const GeometricBackground: React.FC = () => {
 
 // Particle System Component
 const ParticleSystem: React.FC = () => {
-  const particles = [...Array(50)].map((_, i) => ({
+  const particles = [...Array(30)].map((_, i) => ({
     id: i,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    size: Math.random() * 4 + 1,
+    size: Math.random() * 6 + 2,
     duration: Math.random() * 20 + 10,
+    color: i % 4 === 0 ? 'bg-orange-400' : 
+           i % 4 === 1 ? 'bg-purple-400' : 
+           i % 4 === 2 ? 'bg-cyan-400' : 'bg-pink-400'
   }));
 
   return (
@@ -345,7 +350,7 @@ const ParticleSystem: React.FC = () => {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute bg-white rounded-full opacity-20"
+          className={`absolute ${particle.color} rounded-full opacity-30`}
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
@@ -354,7 +359,8 @@ const ParticleSystem: React.FC = () => {
           }}
           animate={{
             y: [0, -20, 0],
-            opacity: [0.2, 0.5, 0.2],
+            opacity: [0.3, 0.7, 0.3],
+            scale: [1, 1.2, 1],
           }}
           transition={{
             duration: particle.duration,
@@ -374,14 +380,14 @@ const ScrollIndicator: React.FC = () => {
     <motion.div
       animate={{ y: [0, 10, 0] }}
       transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-      className="flex flex-col items-center text-white/60 cursor-pointer"
+      className="flex flex-col items-center text-white/70 cursor-pointer"
     >
-      <span className="text-sm mb-2">Scroll to explore</span>
-      <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+      <span className="text-sm mb-2 font-medium">Discover Our Work</span>
+      <div className="w-6 h-10 border-2 border-orange-400/60 rounded-full flex justify-center">
         <motion.div
           animate={{ y: [0, 12, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-1 h-3 bg-white/60 rounded-full mt-2"
+          className="w-1 h-3 bg-orange-400 rounded-full mt-2"
         />
       </div>
     </motion.div>
