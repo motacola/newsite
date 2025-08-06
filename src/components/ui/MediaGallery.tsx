@@ -78,9 +78,6 @@ export const MediaGallery: React.FC<MediaGalleryProps> = ({
   const autoplayRef = useRef<NodeJS.Timeout | null>(null);
   const currentItem = items.length > 0 ? items[currentIndex] : null;
 
-  // Motion values for smooth animations
-  useMotionValue(0);
-
   // Navigation functions
   const goToNext = useCallback(() => {
     const nextIndex = enableInfiniteLoop 
