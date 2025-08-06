@@ -1,6 +1,10 @@
 // Service Worker registration and management
 export const registerServiceWorker = async (): Promise<void> => {
-  if (typeof window === 'undefined' || !('serviceWorker' in navigator)) {
+  if (
+    typeof window === 'undefined' || 
+    !('serviceWorker' in navigator) ||
+    process.env.NODE_ENV !== 'production'
+  ) {
     return;
   }
 

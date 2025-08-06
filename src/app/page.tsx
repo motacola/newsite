@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import Hero from '@/components/sections/Hero';
+import dynamic from 'next/dynamic';
 import { AIProjects } from '@/components/sections/AIProjects';
 import { Services } from '@/components/sections/Services';
 import { getAIProjectsSync } from '@/content/ai-projects';
@@ -7,6 +7,19 @@ import { generatePortfolioStructuredData } from '@/lib/seo/structured-data';
 import { SocialShare } from '@/components/ui/SocialShare';
 import { generateShareableUrl } from '@/lib/seo/social-preview';
 import { AccessibilityToolbar } from '@/components/ui/AccessibilityToolbar';
+
+// Dynamically import Hero to prevent hydration mismatch
+const Hero = dynamic(() => import('@/components/sections/Hero'), {
+  ssr: false,
+  loading: () => (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-orange-900">
+      <div className="text-center">
+        <div className="w-8 h-8 border-2 border-accent-cyan border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+        <span className="text-white/60 text-sm">Loading...</span>
+      </div>
+    </div>
+  )
+});
 
 export default async function Home() {
   const aiProjects = getAIProjectsSync();

@@ -39,20 +39,8 @@ export function AIProjects({
     isLoading 
   } = useProjectFilters(projects);
 
-  // Local state for filtered projects when not using URL-based filtering
-  const [localFilteredProjects, setLocalFilteredProjects] = useState<Project[]>(projects);
-
-  // Handle filter changes from the ProjectFilters component
-  const handleFilterChange = useCallback((filtered: Project[], newFilters: FilterOptions) => {
-    if (enableFiltering) {
-      updateFilters(newFilters);
-    } else {
-      setLocalFilteredProjects(filtered);
-    }
-  }, [enableFiltering, updateFilters]);
-
   // Determine which projects to display
-  const activeProjects = enableFiltering ? filteredProjects : localFilteredProjects;
+  const activeProjects = filteredProjects;
   const displayedProjects = showAllProjects 
     ? activeProjects 
     : activeProjects.slice(0, 3);
@@ -123,7 +111,7 @@ export function AIProjects({
           >
             <ProjectFilters
               projects={projects}
-              onFilterChange={handleFilterChange}
+              onFilterChange={updateFilters}
               initialFilters={filters}
               className="mb-6"
             />
