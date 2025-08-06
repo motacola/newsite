@@ -18,7 +18,7 @@ export interface FilterOptions {
 
 interface ProjectFiltersProps {
   projects: Project[];
-  onFilterChange: (filters: Partial<FilterOptions>) => void;
+  onFilterChange: (filteredProjects: Project[], filters: FilterOptions) => void;
   initialFilters?: Partial<FilterOptions>;
   className?: string;
 }
