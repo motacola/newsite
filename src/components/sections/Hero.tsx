@@ -59,25 +59,30 @@ const Hero: React.FC<HeroProps> = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Typewriter effect
   useEffect(() => {
     const currentText = typewriterTexts[currentTextIndex];
-    let timeout: NodeJS.Timeout;
+
+    // Clear any existing timeout
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
 
     if (isTyping) {
       if (displayText.length < currentText.length) {
-        timeout = setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setDisplayText(currentText.slice(0, displayText.length + 1));
         }, 100);
       } else {
-        timeout = setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setIsTyping(false);
         }, 2000);
       }
     } else {
       if (displayText.length > 0) {
-        timeout = setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setDisplayText(displayText.slice(0, -1));
         }, 50);
       } else {
@@ -86,7 +91,12 @@ const Hero: React.FC<HeroProps> = ({
       }
     }
 
-    return () => clearTimeout(timeout);
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
+      }
+    };
   }, [displayText, isTyping, currentTextIndex, typewriterTexts]);
 
   // Default background media if none provided
