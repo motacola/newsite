@@ -182,9 +182,21 @@ export interface Category {
 export interface HeroProps {
   title: string;
   subtitle: string;
-  backgroundMedia: string;
+  description: string;
   ctaButtons: CTAButton[];
-  interactiveElements: InteractiveElement[];
+  typewriterTexts: string[];
+  backgroundMedia?: MediaItem[];
+  showMediaControls?: boolean;
+  responsiveBreakpoints?: {
+    mobile?: MediaItem[];
+    tablet?: MediaItem[];
+    desktop?: MediaItem[];
+  };
+  enableIntersectionObserver?: boolean;
+  lazyLoad?: boolean;
+  videoQuality?: 'auto' | 'high' | 'medium' | 'low';
+  enablePictureInPicture?: boolean;
+  enableFullscreen?: boolean;
 }
 
 export interface CTAButton {
